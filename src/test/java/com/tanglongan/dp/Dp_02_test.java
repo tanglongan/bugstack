@@ -23,6 +23,9 @@ public class Dp_02_test {
     }
 
 
+    /**
+     * 通过代理的方式，获取相应的工厂。通过这样的方式升级符区集群，就不需要所有的研发人员硬编码了。即使有任何问题，也可以回退到原有的实现方式里，这种热插拔的有点是抑郁维护和可扩展。
+     */
     @Test
     public void test_CacheService() throws Exception {
         ICacheService proxy_egm = JDKProxyFactory.getProxy(ICacheService.class, EGMCacheAdapter.class);
