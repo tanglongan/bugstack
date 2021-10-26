@@ -9,6 +9,7 @@ import java.lang.reflect.Proxy;
  * 因为要把原单体Redis服务升级为两套Redis集群服务，在不破坏原有单体Redis服务和实现类的情况下，即com.tanglongan.dp02_abstractFactory.common.CacheService 通过一个代理类的方式实现一个集群服务处理类
  * 这样就可以非常方便的在Spring、SpringBoot等框架中通过注入的方式替换原有的com.tanglongan.dp02_abstractFactory.common.CacheService实现。
  * <p>
+ * 通过代理类的实现方式，可以非常方便地实现Redis服务的升级，并且可以在真实的业务场景中做成一个引入的中间件，给各个需要升级的系统使用。
  * 这样中间件设计思路的实现方式具备了良好的热插拔性，并可以达到多组集群同时使用和平滑切换的目的
  */
 public class JDKProxyFactory {
