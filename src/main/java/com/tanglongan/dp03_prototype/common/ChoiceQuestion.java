@@ -1,4 +1,4 @@
-package com.tanglongan.dp03_builder.common;
+package com.tanglongan.dp03_prototype.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

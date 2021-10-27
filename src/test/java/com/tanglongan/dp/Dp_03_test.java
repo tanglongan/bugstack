@@ -1,6 +1,6 @@
 package com.tanglongan.dp;
 
-import com.tanglongan.dp03_builder.worse.QuestionBankService;
+import com.tanglongan.dp03_prototype.worse.QuestionBankService;
 import org.junit.Test;
 
 public class Dp_03_test {

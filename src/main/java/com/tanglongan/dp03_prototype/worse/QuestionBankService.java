@@ -1,7 +1,7 @@
-package com.tanglongan.dp03_builder.worse;
+package com.tanglongan.dp03_prototype.worse;
 
-import com.tanglongan.dp03_builder.common.AnswerQuestion;
-import com.tanglongan.dp03_builder.common.ChoiceQuestion;
+import com.tanglongan.dp03_prototype.common.AnswerQuestion;
+import com.tanglongan.dp03_prototype.common.ChoiceQuestion;
 
 import java.util.ArrayList;
 import java.util.HashMap;
