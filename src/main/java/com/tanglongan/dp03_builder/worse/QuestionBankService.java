@@ -62,26 +62,21 @@ public class QuestionBankService {
 
         // 输出结果
         StringBuilder detail = new StringBuilder("考生：" + candidate + "\r\n" + "考号：" + number + "\r\n--------------------------------------------\r\n一、选择题" + "\r\n\n");
-
         for (int idx = 0; idx < choiceQuestionList.size(); idx++) {
             detail.append("第").append(idx + 1).append("题：").append(choiceQuestionList.get(idx).getName()).append("\r\n");
             Map<String, String> option = choiceQuestionList.get(idx).getOption();
             for (String key : option.keySet()) {
                 detail.append(key).append("：").append(option.get(key)).append("\r\n");
-                ;
             }
             detail.append("答案：").append(choiceQuestionList.get(idx).getKey()).append("\r\n\n");
         }
-
         detail.append("二、问答题" + "\r\n\n");
 
         for (int idx = 0; idx < answerQuestionList.size(); idx++) {
             detail.append("第").append(idx + 1).append("题：").append(answerQuestionList.get(idx).getName()).append("\r\n");
             detail.append("答案：").append(answerQuestionList.get(idx).getKey()).append("\r\n\n");
         }
-
         return detail.toString();
-
     }
 
 
