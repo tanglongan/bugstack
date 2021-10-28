@@ -1,6 +1,6 @@
 package com.tanglongan.dp;
 
-import com.tanglongan.dp08_combination.EngineController;
+import com.tanglongan.dp08_combination.worse.EngineController;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

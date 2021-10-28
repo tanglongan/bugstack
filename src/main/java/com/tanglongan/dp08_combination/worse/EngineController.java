@@ -1,4 +1,4 @@
-package com.tanglongan.dp08_combination;
+package com.tanglongan.dp08_combination.worse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
